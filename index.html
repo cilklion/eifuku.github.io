@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社eifuku - 撮影・機材レンタルサービス</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <div class="logo">
+                <h1>eifuku</h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#works" class="nav-link">Works</a></li>
+                    <li><a href="#equipment" class="nav-link">Rental</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ヒーローセクション -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 class="hero-title fade-in">Creative Visual Solutions</h2>
+                <p class="hero-subtitle fade-in-delay-1">東京を拠点に、撮影・機材レンタルサービスを通じて<br>クリエイティブな映像制作をサポートします。</p>
+            </div>
+            <div class="hero-scroll fade-in-delay-2">
+                <div class="scroll-indicator">
+                    <span>Scroll</span>
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要セクション -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>私たちの使命</h3>
+                    <p>株式会社eifukuは、最新の撮影技術と豊富な機材ラインナップを通じて、クリエイターの皆様の創造性を最大限に引き出すことを使命としています。</p>
+                    <p>東京を拠点に、映像制作、写真撮影、ライブ配信など、様々なニーズに対応した総合的なサービスを提供しています。</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="150">0</div>
+                        <div class="stat-label">機材アイテム数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="500">0</div>
+                        <div class="stat-label">年間プロジェクト数</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">設立年数</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- サービスセクション -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Services</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="services-grid" id="services-grid">
+                <!-- サービスはdata.jsから動的に読み込み -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 実績セクション -->
+    <section id="works" class="works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Works</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="works-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="corporate">Corporate</button>
+                <button class="filter-btn" data-filter="event">Event</button>
+            </div>
+            <div class="works-grid" id="works-grid">
+                <!-- 実績はdata.jsから動的に読み込み -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 機材レンタルセクション -->
+    <section id="equipment" class="equipment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Equipment Rental</h2>
+                <div class="section-line"></div>
+                <p class="section-description">業界最新の撮影機材を手軽にレンタル。プロジェクトの規模に応じて最適な機材をご提案します。</p>
+            </div>
+            <div class="equipment-categories" id="equipment-categories">
+                <!-- 機材はdata.jsから動的に読み込み -->
+            </div>
+        </div>
+    </section>
+
+    <!-- お問い合わせセクション -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>株式会社eifuku</h3>
+                        <p>〒150-0001<br>
+                        東京都渋谷区神宮前1-1-1<br>
+                        eifukuビル 3F</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>TEL</h4>
+                        <p>03-1234-5678</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>EMAIL</h4>
+                        <p>info@eifuku-inc.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>BUSINESS HOURS</h4>
+                        <p>平日 9:00 - 18:00</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label>お名前 *</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>会社名</label>
+                        <input type="text" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label>メールアドレス *</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label>お問い合わせ内容 *</label>
+                        <select name="inquiry" required>
+                            <option value="">選択してください</option>
+                            <option value="shooting">撮影サービス</option>
+                            <option value="production">映像制作</option>
+                            <option value="live">ライブ配信</option>
+                            <option value="rental">機材レンタル</option>
+                            <option value="other">その他</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>メッセージ</label>
+                        <textarea name="message" rows="5"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>eifuku</h3>
+                    <p>Creative Visual Solutions</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#services">Services</a>
+                    <a href="#works">Works</a>
+                    <a href="#equipment">Rental</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 eifuku Inc. All rights reserved.</p>
+                    <p>Privacy Policy | Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
